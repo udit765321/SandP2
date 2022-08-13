@@ -3,10 +3,10 @@ from flask import Flask, request, jsonify, render_template
 import pandas as pd
 import datetime as dt
 from sklearn.preprocessing import MinMaxScaler
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.layers import LSTM
-import tensorflow as tf
+# from tensorflow.keras.models import Sequential
+# from tensorflow.keras.layers import Dense
+# from tensorflow.keras.layers import LSTM
+# import tensorflow as tf
 from keras.models import load_model
 
 app = Flask(__name__)
