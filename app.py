@@ -23,8 +23,8 @@ def home():
 
 
 
-# @app.route('/predict',methods=['POST'])
-# def predict():
+@app.route('/predict',methods=['POST'])
+def predict():
 #     '''
 #     For rendering results on HTML GUI
 #     '''
@@ -72,8 +72,8 @@ def home():
 #     res =scaler.inverse_transform(lst_output)
 #     output = res[nDay-1]
 
-#     return render_template('index.html', prediction_text='predicted_value on given date ${}'.format(output))            
-
+    return render_template('index.html', prediction_text='predicted_value on given date ${}'.format(3000))            
+# output
 
 if __name__ == "__main__":
     app.run(debug=True)
